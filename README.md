@@ -1,4 +1,6 @@
-# Everything_Art
+# Everything_Art 
+
+([Play Store Link] (https://play.google.com/store/apps/details?id=com.bsunk.everything_art.capstone_project&hl=en))
 
 This is an image instensive android app that accesses the Harvard Art Museum API to display artwork and details about the artwork. 
 In order to use this app yourself you have to specify an API key in the gradle-properties file. You can get an API key [here] (http://www.harvardartmuseums.org/collections/api).
