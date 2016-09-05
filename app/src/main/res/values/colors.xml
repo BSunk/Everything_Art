@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7986CB</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#f44336</color>
+    <color name="photo_placeholder">#263238</color>
+    <color name="text_color_white">#efebe9</color>
+    <color name="main_activity_background">#212121</color>
+    <color name="detail_line">#212121</color>
+    <color name="title_bar_color">#5c6bc0</color>
+</resources>

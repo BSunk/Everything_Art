@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            />
+
+        <ImageView
+            android:id="@+id/widget_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_button_padding"
+            android:contentDescription="@string/widget_left_content_description"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:layout_gravity="center|start"/>
+
+        <ImageView
+            android:id="@+id/widget_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_button_padding"
+            android:contentDescription="@string/widget_right_content_description"
+            android:src="@drawable/ic_chevron_right_black_24dp"
+            android:layout_gravity="center|end"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_activity_background">
+
+        <AdapterViewFlipper
+            android:id="@+id/widget_view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="@integer/widget_flip_interval"
+            android:autoStart="true"/>
+
+        <!-- Empty view is show if list items are empty -->
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/widget_empty"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

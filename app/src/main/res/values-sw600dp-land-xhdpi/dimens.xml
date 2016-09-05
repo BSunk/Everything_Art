@@ -1,0 +1,10 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <integer name="num_columns">4</integer>
+    <dimen name="details_cardview_margin">60dp</dimen>
+    <dimen name="search_frag_padding">80dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="spinner_text_size">18sp</dimen>
+</resources>

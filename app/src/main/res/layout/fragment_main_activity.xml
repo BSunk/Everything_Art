@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fragment_container"
+    android:background="@color/main_activity_background"
+    android:layout_width="match_parent"
+    android:nextFocusDown="@+id/artwork_images"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/artwork_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="afterDescendants"
+        android:paddingTop="@dimen/recyclerView_padding_top"
+        xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emptyView"
+        android:text="@string/blank_list"
+        android:visibility="invisible"
+        android:paddingTop="@dimen/empty_text_padding_top"
+        android:textColor="@color/text_color_white"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noNetworkError"
+        android:text="@string/no_network"
+        android:visibility="invisible"
+        android:paddingTop="@dimen/empty_text_padding_top"
+        android:textColor="@color/text_color_white"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_favorites_error"
+        android:text="@string/no_favorites"
+        android:visibility="invisible"
+        android:paddingTop="@dimen/empty_text_padding_top"
+        android:textColor="@color/text_color_white"
+        android:layout_gravity="center_horizontal"/>
+</FrameLayout>
+

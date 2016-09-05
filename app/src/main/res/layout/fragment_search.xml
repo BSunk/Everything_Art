@@ -1,0 +1,27 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/search_frag_padding"
+    android:paddingEnd="@dimen/search_frag_padding">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/recyclerView_padding_top"
+        xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_search_results"
+        android:text="@string/no_search_results"
+        android:visibility="invisible"
+        android:paddingTop="@dimen/empty_text_padding_top"
+        android:textColor="@color/text_color_white"
+        android:layout_gravity="center_horizontal"/>
+
+</FrameLayout>
+

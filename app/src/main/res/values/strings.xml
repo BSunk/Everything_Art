@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Everything Art</string>
+    <string name="banner_ad_unit_id" translatable="false"></string>
+    <string name="app_id" translatable="false"></string>
+
+    <!--Content Descriptions-->
+    <string name="back_content_description">Back</string>
+    <string name="up_content_description">Slide up for more details</string>
+    <string name="image_content_description">Artwork image</string>
+    <string name="share_content_description">Share content</string>
+    <string name="wallpaper_content_description">Set as wallpaper</string>
+    <string name="action_fav">Add to Favorites</string>
+    <string name="widget_right_content_description">Next image</string>
+    <string name="widget_left_content_description">Previous image</string>
+    <string name="widget_image_content_description">Artwork image</string>
+    <!--END-->
+
+    <!--Strings for tabs-->
+    <string name="tab_all">RANDOM</string>
+    <string name="tab_favorites">FAVORITES</string>
+    <string name="tab_21th">2000s</string>
+    <string name="tab_20th">1900s</string>
+    <string name="tab_19th">1800s</string>
+    <string name="tab_18th">1700s</string>
+    <string name="tab_17th">1600s</string>
+    <string name="tab_16th">1500s</string>
+    <string name="tab_15th">1400s</string>
+
+    <string name="addedFav">Added to favorites!</string>
+    <string name="removeFav">Removed from favorites</string>
+
+    <!--Errors/Empty content-->
+    <string name="blank_list">No artwork matching criteria.</string>
+    <string name="no_search_results">No results for specified artist.</string>
+    <string name="no_network">Cannot fetch artwork. Check internet connection.</string>
+    <string name="no_pic">Unable to load image. Please check network connection.</string>
+    <string name="no_favorites">There are no favorites. Explore and add some!</string>
+    <string name="widget_empty">You have no favorite artwork!</string>
+
+    <string name="search_hint">Search artists</string>
+    <string name="search_title">Search artists</string>
+    <string name="search_title_bar">Results for \" %1$s \"</string>
+
+    <!--Details headers-->
+    <string name="people">People:</string>
+    <string name="classification">Classification:</string>
+    <string name="culture">Culture:</string>
+    <string name="description">Description:</string>
+    <string name="time_period">Time Period:</string>
+    <string name="unavailable">Not Available</string>
+    <string name="medium">Medium:</string>
+    <string name="technique">Technique:</string>
+    <string name="size">Dimensions:</string>
+    <string name="more_info">Click for more information</string>
+
+    <!--Array of strings for spinner-->
+    <string-array name="classification_array">
+        <item>All media</item>
+        <item>Paintings</item>
+        <item>Sculpture</item>
+        <item>Vessels</item>
+        <item>Prints</item>
+        <item>Photographs</item>
+        <item>Calligraphy</item>
+        <item>Drawings</item>
+    </string-array>
+
+    <string name="title_activity_search">Search</string>
+    <string name="search_result_activity">Artist Artwork</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <string name="share_intent_subject">Check this artwork out!</string>
+    <string name="share_des">Share via</string>
+
+    <string name="dialog_about">All content is from the Harvard Art Museum. Other than the content, this app has no affiliation with Harvard or the Harvard Art Museum.</string>
+    <string name="ok_button">Dismiss</string>
+
+    <string name="wallpaper_des">Are you sure you want to set this artwork as your wallpaper? \nNote: Wallpaper support is basic.</string>
+    <string name="wallpaper_cancel">Cancel</string>
+    <string name="wallpaper_ok">OK</string>
+    <string name="wallpaper_progress_dialog">Setting wallpaper</string>
+
+</resources>

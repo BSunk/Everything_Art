@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bsunk.everything_art.capstone_project" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name="com.bsunk.everything_art.capstone_project.ui.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bsunk.everything_art.capstone_project.ui.DetailActivity"
+            android:parentActivityName="com.bsunk.everything_art.capstone_project.ui.MainActivity"
+            android:theme="@style/DetailTheme" />
+
+        <provider
+            android:name="com.bsunk.everything_art.capstone_project.data.ArtworkProvider"
+            android:authorities="com.android.bharat.capstone_project"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.bsunk.everything_art.capstone_project.search.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.bsunk.everything_art.capstone_project.ui.MainActivity"
+            android:theme="@style/DetailTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.bsunk.everything_art.capstone_project.search.SearchArtistResultActivity"
+            android:label="@string/search_result_activity" >
+        </activity>
+
+        <!-- Widget Provider -->
+        <receiver android:name="com.bsunk.everything_art.capstone_project.widget.ArtworkAppWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.android.bharat.capstone_project.ACTION_DATA_UPDATED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/artwork_appwidget_info" />
+        </receiver>
+
+        <service
+            android:name="com.bsunk.everything_art.capstone_project.widget.ArtworkWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>
