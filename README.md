@@ -14,6 +14,14 @@ Some features:
  - Search function to search for artists.
  - Set artwork as wallpaper.
  - Share artwork.
+ - Optimized for mobile devices and tablets.
  - Uses Volley library for API calls and image loading. 
  - Admob/Analytics
+ 
+##Screenshots
+<img src="/screenshots/Screenshot_20160829-163356.png" alt="image" width="400">
+<img src="/screenshots/Screenshot_20160829-163256.png" alt="image" width="400">
+<img src="/screenshots/Screenshot_20160829-172326.png" alt="image" width="400">
+<img src="/screenshots/Screenshot_20160903-012002.png" alt="image" width="400">
+
 
