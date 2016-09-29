@@ -10,6 +10,7 @@ Also, you will need google-services.json for the admob which can be easily remov
 Some features:
  - Uses material design concepts.
  - Uses Recyclerviews and Staggeredgridlayout to display the images. 
+ - Endless RecyclerView that loads images only when scrolling. 
  - Uses viewpagers to swipe between centuries and a spinner to select the type of media. 
  - Uses a content provider to store favorite artworks.
  - Implemented a widget to view the artwork using an AdapterViewFlipper.
